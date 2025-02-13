@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine?</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="https://your-external-link.com/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5Z8TCVHZD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C5Z8TCVHZD');
+    </script>
 </head>
 <body>
     <div class="container">
@@ -15,6 +27,24 @@
         </div>
     </div>
     <div id="hearts-container"></div>
+
+    <!-- External JavaScript link -->
     <script src="script.js"></script>
+
+    <!-- Event tracking for Yes/No buttons -->
+    <script>
+        document.getElementById('yes').addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'Yes'
+            });
+        });
+        document.getElementById('no').addEventListener('click', function() {
+            gtag('event', 'click', {
+                'event_category': 'Button',
+                'event_label': 'No'
+            });
+        });
+    </script>
 </body>
 </html>
