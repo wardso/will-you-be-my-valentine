@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine?</title>
     
-    <!-- External CSS link -->
-    <link rel="stylesheet" href="https://your-external-link.com/style.css">
-
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics Global Site Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5Z8TCVHZD"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'G-C5Z8TCVHZD');
+      gtag('config', 'G-C5Z8TCVHZD');  // Replace with your own Google Analytics tracking ID
     </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -27,24 +26,6 @@
         </div>
     </div>
     <div id="hearts-container"></div>
-
-    <!-- External JavaScript link -->
     <script src="script.js"></script>
-
-    <!-- Event tracking for Yes/No buttons -->
-    <script>
-        document.getElementById('yes').addEventListener('click', function() {
-            gtag('event', 'click', {
-                'event_category': 'Button',
-                'event_label': 'Yes'
-            });
-        });
-        document.getElementById('no').addEventListener('click', function() {
-            gtag('event', 'click', {
-                'event_category': 'Button',
-                'event_label': 'No'
-            });
-        });
-    </script>
 </body>
 </html>
